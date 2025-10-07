@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { Mail, Linkedin, Github, Send, FileDown, Image, Sparkles, CheckCircle } from 'lucide-react';
 // import anil from "../images/anil1.webp"
-import anil1 from "../images/anil1.png"
+
+import anil1 from "../images/anil1.jpg";
+
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState<null | "success">(null);
@@ -117,7 +119,7 @@ const Contact = () => {
               <div className="space-y-6">
                 <div>
                   <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-3">
-                    Your Name
+                   Enter Your Name
                   </label>
                   <input
                     type="text"
@@ -125,13 +127,13 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     className="w-full px-5 py-4 rounded-xl border-2 border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-4 focus:ring-blue-500 focus:border-blue-500 transition-all placeholder-gray-400"
-                    placeholder="John Doe"
+                    placeholder="Anil Nivargi"
                   />
                 </div>
 
                 <div>
                   <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-3">
-                    Email Address
+                   Enter Email Address
                   </label>
                   <input
                     type="email"
@@ -139,13 +141,13 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full px-5 py-4 rounded-xl border-2 border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-4 focus:ring-blue-500 focus:border-blue-500 transition-all placeholder-gray-400"
-                    placeholder="john@example.com"
+                    placeholder="anil@example.com"
                   />
                 </div>
 
                 <div>
                   <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-3">
-                    Your Message
+                   Enter Your Message
                   </label>
                   <textarea
                     name="message"
@@ -192,7 +194,7 @@ const Contact = () => {
                   </div>
                   <div className="group/img relative overflow-hidden rounded-2xl aspect-square">
                     <img 
-                      className="w-full h-full object-cover group-hover/img:scale-110 transition-transform duration-500" 
+                      className="w- h-100 object-cover group-hover/img:scale-110 transition-transform duration-500" 
                   src = {anil1}
                       alt="Project 2" 
                     />
