@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Mail, Linkedin, Github, Send, FileDown, Image, Sparkles, CheckCircle } from 'lucide-react';
 // import anil from "../images/anil1.webp"
+import anil1 from "../images/anil1.png"
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState<null | "success">(null);
@@ -192,7 +193,7 @@ const Contact = () => {
                   <div className="group/img relative overflow-hidden rounded-2xl aspect-square">
                     <img 
                       className="w-full h-full object-cover group-hover/img:scale-110 transition-transform duration-500" 
-                  
+                  src = {anil1}
                       alt="Project 2" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-purple-600 to-transparent opacity-0 group-hover/img:opacity-80 transition-opacity"></div>
@@ -200,7 +201,7 @@ const Contact = () => {
                   <div className="group/img relative overflow-hidden rounded-2xl aspect-square">
                     <img 
                       className="w-full h-full object-cover group-hover/img:scale-110 transition-transform duration-500" 
-                      
+                      src= {anil1}
                       alt="Project 3" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-pink-600 to-transparent opacity-0 group-hover/img:opacity-80 transition-opacity"></div>
