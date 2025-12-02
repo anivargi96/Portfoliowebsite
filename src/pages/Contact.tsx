@@ -47,10 +47,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="min-h-screen pt-24 pb-16">
+    <section id="contact" className="py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="glass-panel p-8 md:p-10 rounded-3xl fade-in">
-        <div className="text-center mb-16">
+        <div className="p-6 md:p-8 fade-in">
+        <div className="text-center mb-8">
           <div className="inline-flex items-center gap-3 mb-4">
             <Sparkles className="w-8 h-8 text-blue-600 animate-pulse" />
             <h1 className="text-5xl md:text-6xl font-black bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
@@ -63,7 +63,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-3 gap-4 mb-6">
           {contacts.map((contact, index) => {
             const Icon = contact.icon;
             return (
@@ -74,9 +74,9 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="group relative"
               >
-                <div className={`absolute inset-0 bg-gradient-to-r ${contact.color} rounded-3xl blur-xl opacity-0 group-hover:opacity-40 transition-all duration-500`}></div>
+                <div className={`absolute inset-0 bg-gradient-to-r ${contact.color} blur-xl opacity-0 group-hover:opacity-40 transition-all duration-500`}></div>
                 
-                <div className="relative p-8 rounded-3xl bg-white dark:bg-gray-800 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-200 dark:border-gray-700 hover:-translate-y-2">
+                <div className="relative p-6 transition-all duration-300">
                   <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${contact.color} mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg`}>
                     <Icon className="w-8 h-8 text-white" />
                   </div>
@@ -95,11 +95,11 @@ const Contact = () => {
           })}
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl blur-2xl opacity-20"></div>
+        <div className="grid lg:grid-cols-2 gap-6">
+            <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 blur-2xl opacity-20"></div>
             
-            <div className="relative p-10 rounded-3xl bg-white dark:bg-gray-800 shadow-2xl border border-gray-200 dark:border-gray-700">
+            <div className="relative p-10">
               <div className="flex items-center gap-4 mb-8">
                 <div className="p-3 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600">
                   <Send className="w-7 h-7 text-white" />
@@ -170,11 +170,11 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="space-y-8">
+              <div className="space-y-6">
             <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 blur-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
               
-              <div className="relative p-8 rounded-3xl bg-white dark:bg-gray-800 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700">
+              <div className="relative p-6 transition-all duration-300">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-3 rounded-xl bg-gradient-to-br from-purple-600 to-pink-600">
                     <Image className="w-6 h-6 text-white" />
@@ -212,7 +212,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="relative group overflow-hidden rounded-3xl">
+            <div className="relative group overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600"></div>
               
               <div className="relative p-10 text-white">
@@ -228,7 +228,7 @@ const Contact = () => {
                 <a
                   href="/cv/Anil_Nivargi_CV.pdf"
                   download
-                  className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-white bg-opacity-20 hover:bg-opacity-30 backdrop-blur-md transition-all duration-300 font-bold text-lg hover:scale-105 hover:shadow-2xl group/btn"
+                  className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-md bg-white bg-opacity-20 hover:bg-opacity-30 backdrop-blur-md transition-all duration-300 font-bold text-lg hover:scale-105 group/btn"
                 >
                   <FileDown className="w-6 h-6 group-hover/btn:animate-bounce" />
                   Download CV
@@ -238,7 +238,7 @@ const Contact = () => {
           </div>
         </div>        
 
-        <div className="mt-16 text-center">
+        <div className="mt-8 text-center">
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900 dark:to-purple-900 text-gray-800 dark:text-gray-100 shadow-lg">
             <Sparkles className="w-5 h-5 animate-pulse" />
             <span className="font-semibold text-sm">Let's build something amazing together!</span>

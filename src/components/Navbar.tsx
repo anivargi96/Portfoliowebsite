@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('about');
-  const [scrolled, setScrolled] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -27,11 +26,7 @@ const Navbar = () => {
     }
   };
 
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  // Scrolled state removed; not used anymore
 
   useEffect(() => {
     const sectionIds = navItems.map((n) => n.id);

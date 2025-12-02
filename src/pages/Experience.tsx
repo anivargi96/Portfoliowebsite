@@ -41,11 +41,11 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="min-h-screen pt-16 relative overflow-hidden">
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="glass-panel p-8 md:p-10 rounded-3xl fade-in">
+    <section id="experience" className="py-6 relative overflow-hidden">
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="p-6 md:p-8 fade-in">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full mb-6 shadow-lg">
             <TrendingUp className="w-4 h-4" />
             <span className="text-sm font-semibold">Professional Journey</span>
@@ -65,7 +65,7 @@ const Experience = () => {
           {/* Vertical line */}
           <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 rounded-full"></div>
           
-          <div className="space-y-8">
+          <div className="space-y-6">
             {experiences.map((exp, index) => (
               <div
                 key={index}
@@ -77,7 +77,7 @@ const Experience = () => {
                 </div>
                 
                 {/* Content card */}
-                <div className="relative p-8 rounded-3xl bg-white dark:bg-gray-800 shadow-xl hover:shadow-2xl transition-all duration-500 border-2 border-transparent hover:border-blue-500/50 group-hover:-translate-y-2 overflow-hidden">
+                <div className="relative p-6 transition-all duration-300">
                   {/* Gradient overlay on hover */}
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   
@@ -130,16 +130,16 @@ const Experience = () => {
         </div>
 
         {/* Stats footer */}
-        <div className="mt-16 grid grid-cols-3 gap-6">
-          <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 text-white shadow-xl">
+        <div className="mt-8 grid grid-cols-3 gap-6">
+          <div className="text-center p-6 rounded-md bg-gradient-to-br from-blue-500 to-cyan-500 text-white">
             <div className="text-4xl font-bold mb-2">5+</div>
             <div className="text-sm opacity-90">Positions</div>
           </div>
-          <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 text-white shadow-xl">
+          <div className="text-center p-6 rounded-md bg-gradient-to-br from-purple-500 to-pink-500 text-white">
             <div className="text-4xl font-bold mb-2">2+</div>
             <div className="text-sm opacity-90">Years Experience</div>
           </div>
-          <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-orange-500 to-red-500 text-white shadow-xl">
+          <div className="text-center p-6 rounded-md bg-gradient-to-br from-orange-500 to-red-500 text-white">
             <div className="text-4xl font-bold mb-2">10+</div>
             <div className="text-sm opacity-90">Technologies</div>
           </div>

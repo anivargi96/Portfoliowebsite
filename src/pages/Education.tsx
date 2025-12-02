@@ -6,7 +6,7 @@ const Education = () => {
       field: 'Information Science and Engineering',
       institution: 'BNM Institute of Technology',
       location: 'Bangalore',
-      period: '2019 - 2023',
+      period: '2021 - 2024',
       grade: 'CGPA: 8.1',
       description: 'Specialized in software development, data structures, algorithms, and modern web technologies with hands-on project experience.',
       achievements: ['DSA', 'Machine Learning', 'Full Stack Development', 'Database Management'],
@@ -18,7 +18,7 @@ const Education = () => {
       field: 'Computer Science and Engineering',
       institution: 'A G Patil Polytechnic',
       location: 'Solapur',
-      period: '2016 - 2019',
+      period: '2019 - 2021',
       grade: 'Percentage: 77.41%',
       description: 'Built strong foundation in computer science fundamentals, programming concepts, and software engineering principles.',
       achievements: ['Programming Fundamentals', 'Web Technologies', 'Computer Networks', 'Operating Systems'],
@@ -45,11 +45,11 @@ const Education = () => {
   };
 
   return (
-    <section id="education" className="min-h-screen pt-16">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="glass-panel p-8 md:p-10 rounded-3xl slide-in-right">
+    <section id="education" className="py-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="p-6 md:p-8 slide-in-right">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 mb-4">
             <GraduationCap className="w-8 h-8 text-white" />
           </div>
@@ -68,7 +68,7 @@ const Education = () => {
           {/* Timeline line */}
           <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-200 via-purple-200 to-transparent dark:from-blue-900 dark:via-purple-900"></div>
 
-          <div className="space-y-12">
+          <div className="space-y-8">
             {education.map((edu, index) => {
               const colors = getColorClasses(edu.color);
               const isEven = index % 2 === 0;
@@ -76,7 +76,7 @@ const Education = () => {
               return (
                 <div
                   key={index}
-                  className={`relative flex flex-col md:flex-row gap-8 ${
+                  className={`relative flex flex-col md:flex-row gap-6 ${
                     isEven ? 'md:flex-row' : 'md:flex-row-reverse'
                   }`}
                 >
@@ -85,7 +85,7 @@ const Education = () => {
 
                   {/* Content Card */}
                   <div className={`flex-1 ${isEven ? 'md:pr-12' : 'md:pl-12'}`}>
-                    <div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700">
+                    <div className="group relative overflow-hidden transition-all duration-500 p-0">
                       {/* Image Header */}
                       <div className="relative h-48 overflow-hidden">
                         <img
@@ -170,22 +170,22 @@ const Education = () => {
         </div>
 
         {/* Bottom Stats */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="text-center p-6 rounded-xl bg-white dark:bg-gray-800 shadow-lg border border-gray-100 dark:border-gray-700">
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="text-center p-6">
             <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-2">
               8.1
             </div>
-            <div className="text-sm text-gray-600 dark:text-gray-400">Engineering CGPA</div>
+            <div className="text-sm text-gray-600 dark:text-gray-400">B.E in Information Science and Engineering CGPA</div>
           </div>
-          <div className="text-center p-6 rounded-xl bg-white dark:bg-gray-800 shadow-lg border border-gray-100 dark:border-gray-700">
+          <div className="text-center p-6">
             <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">
               77.41%
             </div>
             <div className="text-sm text-gray-600 dark:text-gray-400">Diploma Percentage</div>
           </div>
-          <div className="text-center p-6 rounded-xl bg-white dark:bg-gray-800 shadow-lg border border-gray-100 dark:border-gray-700">
+          <div className="text-center p-6">
             <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
-              7+ Years
+              5+ Years
             </div>
             <div className="text-sm text-gray-600 dark:text-gray-400">Academic Experience</div>
           </div>

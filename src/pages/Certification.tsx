@@ -1,6 +1,6 @@
 import React from "react";
 
-const Certification = () => {
+const Certification: React.FC = () => {
   const certifications = [
     {
       title: "Microsoft Azure Fundamentals",
@@ -35,12 +35,12 @@ const Certification = () => {
   ];
 
   return (
-    <section id="certification" className="min-h-screen pt-16 bg-gray-50 dark:bg-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-4xl font-bold mb-12 text-center text-gray-900 dark:text-white">Certifications</h1>
-        <div className="grid md:grid-cols-2 gap-8">
+    <section id="certification" className="py-6 bg-gray-50 dark:bg-gray-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <h1 className="text-4xl font-bold mb-6 text-center text-gray-900 dark:text-white">Certifications</h1>
+        <div className="grid md:grid-cols-2 gap-6">
           {certifications.map((cert, index) => (
-            <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-shadow duration-300">
+            <div key={index} className="p-6 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <img src={cert.img} alt={cert.title} className="w-16 h-16 rounded-full mr-4 border-2 border-blue-500 object-cover" />
                 <div>

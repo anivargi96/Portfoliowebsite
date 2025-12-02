@@ -18,20 +18,21 @@
     @apply font-sans antialiased bg-slate-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100;
   }
 
-  /* Standardize medium vertical padding for sections */
-  section {
-    @apply py-16;
+  /* Standardize smaller vertical padding for sections to reduce gaps */
+    section {
+      @apply py-4;
   }
 }
 
 @layer utilities {
   /* Glassmorphism helpers */
+  /* Simplified panel used across pages: no heavy border/shadow, subtle padding handled in JS */
   .glass-panel {
-    @apply bg-white/60 dark:bg-gray-900/40 backdrop-blur-xl border border-white/40 dark:border-gray-800/60 shadow-lg;
+    @apply bg-transparent backdrop-blur-none border-0 shadow-none;
   }
 
   .glass-card {
-    @apply bg-white/70 dark:bg-gray-800/60 backdrop-blur-xl border border-white/50 dark:border-gray-700/60 shadow-xl;
+    @apply bg-transparent border-0 shadow-none;
   }
 
   /* Soft animated aurora background overlay */

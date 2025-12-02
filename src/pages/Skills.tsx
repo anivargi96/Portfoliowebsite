@@ -28,22 +28,22 @@ const Skills = () => {
     },
   ];
   return (
-    <section id="skills" className="min-h-screen pt-16">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="glass-panel p-8 md:p-10 rounded-3xl fade-in">
-        <h1 className="text-4xl font-bold mb-12 text-center">
+    <section id="skills" className="py-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="p-6 md:p-8 fade-in">
+        <h1 className="text-4xl font-bold mb-6 text-center">
           <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
             Skills & Expertise
           </span>
         </h1>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6">
           {skillCategories.map((category, index) => {
             const Icon = category.icon;
             return (
               <div
                 key={index}
-                className="group p-6 rounded-2xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700"
+                className="group p-6 transition-all duration-300"
               >
                 <div className="flex items-center gap-4 mb-6">
                   <div className={`p-3 rounded-xl bg-gradient-to-br ${category.color} group-hover:scale-110 transition-transform`}>
@@ -69,7 +69,7 @@ const Skills = () => {
           })}
         </div>
 
-        <div className="mt-12 p-8 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-600 text-white text-center">
+        <div className="mt-8 p-6 rounded-md bg-gradient-to-r from-blue-600 to-cyan-600 text-white text-center">
           <h2 className="text-2xl font-bold mb-4">Always Learning</h2>
           <p className="text-lg opacity-90">
             Continuously exploring new technologies and staying up-to-date with industry trends

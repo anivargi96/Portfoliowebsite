@@ -169,11 +169,11 @@ const Projects = () => {
   // const categories = ["All", "Machine Learning", "Full Stack", "Backend"]; // reserved for future filtering UI
 
   return (
-    <section id="projects" className="min-h-screen pt-16 relative overflow-hidden">
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="glass-panel p-8 md:p-10 rounded-3xl fade-in">
+    <section id="projects" className="py-6 relative overflow-hidden">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="p-6 md:p-8 fade-in">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 mb-4">
             <Code className="w-8 h-8 text-white" />
           </div>
@@ -188,33 +188,33 @@ const Projects = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-4xl mx-auto">
-          <div className="text-center p-4 rounded-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm shadow-lg border border-gray-200 dark:border-gray-700">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6 max-w-4xl mx-auto">
+          <div className="text-center p-4">
             <div className="text-3xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">2</div>
             <div className="text-sm text-gray-600 dark:text-gray-400">ML Projects</div>
           </div>
-          <div className="text-center p-4 rounded-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm shadow-lg border border-gray-200 dark:border-gray-700">
+          <div className="text-center p-4">
             <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">4</div>
             <div className="text-sm text-gray-600 dark:text-gray-400">Full Stack</div>
           </div>
-          <div className="text-center p-4 rounded-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm shadow-lg border border-gray-200 dark:border-gray-700">
+          <div className="text-center p-4">
             <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">4</div>
             <div className="text-sm text-gray-600 dark:text-gray-400">Backend APIs</div>
           </div>
-          <div className="text-center p-4 rounded-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm shadow-lg border border-gray-200 dark:border-gray-700">
+          <div className="text-center p-4">
             <div className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">10+</div>
             <div className="text-sm text-gray-600 dark:text-gray-400">Technologies</div>
           </div>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => {
             const IconComponent = project.icon;
             return (
             <div
               key={index}
-                className="group relative rounded-2xl bg-white dark:bg-gray-800 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-200 dark:border-gray-700 overflow-hidden"
+                className="group relative overflow-hidden transition-all duration-300"
               >
                 {/* Category Badge */}
                 <div className="absolute top-4 right-4 z-10">
@@ -274,14 +274,14 @@ const Projects = () => {
               </div>
 
                 {/* Hover Effect Border */}
-                <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
+                <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
               </div>
             );
           })}
             </div>
 
         {/* Note */}
-        <div className="mt-12 text-center">
+        <div className="mt-8 text-center">
           <p className="text-sm text-gray-500 dark:text-gray-400 italic">
             💡 Most projects were developed during my college days as part of coursework and personal learning
           </p>
